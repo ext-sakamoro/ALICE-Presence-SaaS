@@ -1,5 +1,5 @@
 global:
-  domain: alice-presence.alice-platform.com
+  domain: alice-presence.alicelaw.net
 frontend:
   replicas: 2
   image: alice-presence/frontend:latest
