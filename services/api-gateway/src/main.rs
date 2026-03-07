@@ -1,4 +1,4 @@
-#![allow(dead_code)]
+#![allow(dead_code, clippy::no_effect)]
 use axum::{
     body::Body,
     extract::{Request, State},

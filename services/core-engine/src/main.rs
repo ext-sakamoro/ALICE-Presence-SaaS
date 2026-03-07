@@ -20,6 +20,7 @@ struct PresenceState {
     peak_concurrent: usize,
 }
 
+#[allow(dead_code)]
 struct Session {
     session_id: String,
     user_id: String,

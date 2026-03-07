@@ -98,12 +98,12 @@ export default function ConsolePage() {
           {result && !('error' in result) && (
             <div className="border border-border rounded-lg p-4">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {result.session_id && <Stat label="Session" value={String(result.session_id).slice(0, 8)} />}
-                {result.status && <Stat label="Status" value={String(result.status)} accent />}
-                {result.online_count != null && <Stat label="Online" value={String(result.online_count)} />}
-                {result.zkp_token && <Stat label="ZKP Token" value={String(result.zkp_token).slice(0, 12) + '...'} />}
-                {result.vivaldi_coordinates && <Stat label="Vivaldi" value={(result.vivaldi_coordinates as number[]).map(v => Number(v).toFixed(3)).join(', ')} />}
-                {result.privacy_level != null && <Stat label="Privacy" value={PRIVACY.find(p => p.l === result.privacy_level)?.n ?? String(result.privacy_level)} />}
+                {result.session_id != null && (<Stat label="Session" value={String(result.session_id).slice(0, 8)} />)}
+                {result.status != null && (<Stat label="Status" value={String(result.status)} accent />)}
+                {result.online_count != null && (<Stat label="Online" value={String(result.online_count)} />)}
+                {result.zkp_token != null && (<Stat label="ZKP Token" value={String(result.zkp_token).slice(0, 12) + '...'} />)}
+                {result.vivaldi_coordinates != null && (<Stat label="Vivaldi" value={(result.vivaldi_coordinates as number[]).map(v => Number(v).toFixed(3)).join(', ')} />)}
+                {result.privacy_level != null && (<Stat label="Privacy" value={PRIVACY.find(p => p.l === result.privacy_level)?.n ?? String(result.privacy_level)} />)}
               </div>
             </div>
           )}
