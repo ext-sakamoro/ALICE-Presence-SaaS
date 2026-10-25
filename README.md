@@ -2,8 +2,6 @@
 
 Real-time presence engine — user session management, Vivaldi coordinate proximity, privacy levels, and ZKP-based identity via REST API.
 
-**License: AGPL-3.0**
-
 ---
 
 ## Architecture
